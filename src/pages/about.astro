@@ -1,0 +1,101 @@
+---
+import experiences from "../collections/experiences.json";
+import AboutExperience from "../components/about-experience.astro";
+import PageHeading from "../components/page-heading.astro";
+import Layout from "../layouts/main.astro";
+---
+
+<Layout title="À propos de moi">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="À propos de moi"
+      description="Bonjour 👋 Je m'appelle Téo Morlans, développeur full stack basé à Bordeaux, France. Je suis passionné par le développement de solutions web innovantes et l'apprentissage de nouvelles technologies."
+    />
+
+    <img src="/assets/images/about.png" class="relative z-30 w-full my-10 rounded-xl" />
+
+    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Courte biographie</h2>
+    <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+      Développeur full stack 🧑‍💻, curieux de découvrir de nouveaux frameworks 🚀, adepte de la collaboration et du travail en équipe 🤝.
+    </p>
+
+    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">
+      Expériences professionnelles
+    </h2>
+    
+    <div class="mt-4 space-y-6">
+      <div class="mb-4">
+        <h3 class="text-xl font-semibold text-black dark:text-neutral-200">
+          Le Wagon
+        </h3>
+        <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+          01/2024 – 03/2024
+        </p>
+        <p class="mt-2 text-base text-gray-600 dark:text-neutral-400">
+          <span class="font-semibold">Rôle :</span> Développeur Web Full Stack
+        </p>
+        <ul class="mt-1 list-disc list-inside text-gray-600 dark:text-neutral-400 ml-4">
+          <li>Formation intensive diplômante en développement web full stack, équivalent à un niveau Bac+3/4.</li>
+          <li>Maîtrise de Ruby on Rails, JavaScript, HTML, CSS, et SQL</li>
+          <li>Développement et déploiement d'une application web en groupe</li>
+          <li>Utilisation de Git, GitHub et Heroku pour le versioning et le déploiement</li>
+        </ul>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="text-xl font-semibold text-black dark:text-neutral-200">
+          Monoprix
+        </h3>
+        <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+          09/2023 – En cours
+        </p>
+        <p class="mt-2 text-base text-gray-600 dark:text-neutral-400">
+          <span class="font-semibold">Rôle :</span> Employé polyvalent
+        </p>
+        <ul class="mt-1 list-disc list-inside text-gray-600 dark:text-neutral-400 ml-4">
+          <li>Gestion de la caisse et des transactions financières</li>
+          <li>Accueil et service client</li>
+          <li>Gestion des litiges et retours client</li>
+        </ul>
+      </div>
+    
+      <div class="mb-4">
+        <h3 class="text-xl font-semibold text-black dark:text-neutral-200">
+          Leclerc Drive
+        </h3>
+        <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+          2020 – 2023
+        </p>
+        <p class="mt-2 text-base text-gray-600 dark:text-neutral-400">
+          <span class="font-semibold">Rôle :</span> Employé logistique
+        </p>
+        <ul class="mt-1 list-disc list-inside text-gray-600 dark:text-neutral-400 ml-4">
+          <li>Gestion des stocks et logistique</li>
+          <li>Relation client et connaissance des produits</li>
+          <li>Travail en équipe</li>
+        </ul>
+      </div>
+    
+      <div class="mb-4">
+        <h3 class="text-xl font-semibold text-black dark:text-neutral-200">
+          Service des vins
+        </h3>
+        <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+          2019 – 2020
+        </p>
+        <p class="mt-2 text-base text-gray-600 dark:text-neutral-400">
+          <span class="font-semibold">Rôle :</span> Employé polyvalent
+        </p>
+        <ul class="mt-1 list-disc list-inside text-gray-600 dark:text-neutral-400 ml-4">
+          <li>Gestion de la caisse</li>
+          <li>Vente et marketing des produits</li>
+        </ul>
+      </div>
+    </div>
+    
+    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Connectons-nous</h2>
+    <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+      Pour me contacter ou rester informé de mon travail, n'hésitez pas à m'envoyer un <a href="mailto:teomorlans@gmail.com" class="text-indigo-600 underline">email</a> et je vous répondrai rapidement.
+    </p>
+  </section>
+</Layout>

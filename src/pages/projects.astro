@@ -1,0 +1,76 @@
+---
+import projects from "../collections/projects.json";
+import PageHeading from "../components/page-heading.astro";
+import Project from "../components/project.astro";
+import Layout from "../layouts/main.astro";
+---
+
+<Layout title="Mes Projets">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="Mes Projets"
+      description="Découvrez les projets sur lesquels je travaille actuellement. J'adore concevoir de nouvelles idées et développer des projets innovants. Je suis toujours en train de créer quelque chose de nouveau, alors revenez régulièrement pour voir les dernières nouveautés !"
+    />
+
+    <div class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-2">
+      <div class="space-y-6">
+        <div class="mb-4">
+          <h3 class="text-xl font-semibold text-black dark:text-neutral-200">
+            Projet Laravel
+          </h3>
+          <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+            04/2024 – En cours
+          </p>
+          <p class="mt-2 text-base text-gray-600 dark:text-neutral-400">
+            <span class="font-semibold">Rôle :</span> Développeur full stack
+          </p>
+          <p class="mt-1 text-gray-600 dark:text-neutral-400">
+            <span class="font-semibold">Technologies :</span> PHP, Laravel, jQuery, MySQL, HTML, CSS
+          </p>
+          <ul class="mt-1 list-disc list-inside text-gray-600 dark:text-neutral-400 ml-4">
+            <li>Conception de l’architecture de la base de données</li>
+            <li>Création d'un panier d'achat</li>
+            <li>Mise en place d'un panneau d'administration</li>
+            <li>Intégration d'un processeur de paiement</li>
+          </ul>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="text-xl font-semibold text-black dark:text-neutral-200">
+            ScrapQuest Solution
+          </h3>
+          <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+            02/2024
+          </p>
+          <p class="mt-2 text-base text-gray-600 dark:text-neutral-400">
+            <span class="font-semibold">Rôle :</span> Développeur full stack
+          </p>
+          <p class="mt-1 text-gray-600 dark:text-neutral-400">
+            <span class="font-semibold">Technologies :</span> Ruby, Ruby on Rails, Bootstrap, Heroku, Vue.js, Git
+          </p>
+          <ul class="mt-1 list-disc list-inside text-gray-600 dark:text-neutral-400 ml-4">
+            <li>Développement d'une base de données personnalisée</li>
+            <li>Collaboration via GitHub</li>
+            <li>Implémentation d'une solution de web scraping</li>
+            <li>Filtrage et traitement des données</li>
+            <li>Déploiement sur Heroku</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mapping through projects.json to dynamically generate projects
+      {
+        projects.map((project) => {
+          return (
+            <Project
+              name={project.name}
+              description={project.description}
+              image={project.image}
+              url={project.url}
+            />
+          )
+        })
+      } -->
+    </div>
+  </section>
+</Layout>

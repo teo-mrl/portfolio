@@ -1,0 +1,12 @@
+[
+	{
+		"name": "SrapQuest",
+		"description": "Solution de Scrapping pour particulier.",
+		"image": "/assets/images/projects/1.png"
+	},
+	{
+		"name": "Projet Laravel",
+		"description": "Application de commerce en ligne.",
+		"image": "/assets/images/projects/2.png"
+	}
+]
